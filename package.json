@@ -1,0 +1,16 @@
+{
+  "name": "twitter-sentiment",
+  "version": "1.0.0",
+  "description": "sentiment analysis application with Node.js,",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "luisf11",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "sentiment": "^4.2.0"
+  }
+}
