@@ -5,43 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/script/style.css"/>
     <title>twitter-impression</title>
+
 </head>
 
 <body>
+    <div class="container">
+        <div class="title">
+            <h1>Sentiment analysis</h1>
+        </div>
+        <div class="form">
+            <div>
+                <label>Hey, want to know the impression your text creates? <b>Enter the text here.</b></label>
+            </div>
+            <textarea placeholder="enter text here..." rows="10" cols="65"></textarea>
+            <div>
+                <button onclick='process()'>analyse</button>
+            </div>
+        </div>
+        <div class="response">
+    
+        </div>
+    </div>
 
-    <h1>wellcome to sentiment analysis</h1>
-    <input type="text" placeholder="write something..." />
-    <button onclick='process()'>analyse</button>
 
-    <script>
-        function process() {
-            let text = document.querySelector('input');
-            callApi(text.value);
-        }
-
-        function callApi(phrase){
-            const url = '/analyse';
-            const data = {
-                "phrase": `${phrase}`
-            }
-     
-            fetch(url,{
-                method:"POST",
-                body: phrase
-            }).then((res)=>{
-                   console.log("req",res)
-               return res.json()
-
-            }).then(data =>{
-                // console.log("data",data)
-            }).catch(err => {
-                console.log(err)
-            });
-        }
-
-    </script>
-    <script src="script/index.js" />
+    <script src="/script/master.js"></script>
 </body>
 
 </html>
