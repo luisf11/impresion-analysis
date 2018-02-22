@@ -1,3 +1,7 @@
+/* *{
+    outline: #2196F3 1px solid;
+} */
+
 body {
     margin: 0;
 	padding: 0;
@@ -11,7 +15,49 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.title {
-    font-size: 20px;
+.title { 
+    margin-bottom: 3em;
+}
+
+.title h1{
+    font-size: 40px;
     color: #2196F3;
 }
+
+.label{
+    margin-bottom: 2em;
+}
+ textarea {
+    border: 1px solid #2196F3;
+ }
+.button{
+    margin-top: 2em;
+}
+
+.button button {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    border: 2px solid #2196F3;
+    padding: 9px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 4px 2px; */
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;  
+   
+}
+
+.button button:hover {
+    background-color: #2196F3;
+    color: white;
+  }  
+
+  .response{
+      display: flex;
+      flex-direction: row;
+      margin-top: 3em;
+  }

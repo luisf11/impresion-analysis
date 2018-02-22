@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="/script/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/script/style.css" />
     <title>twitter-impression</title>
 
 </head>
@@ -16,20 +16,30 @@
             <h1>Sentiment analysis</h1>
         </div>
         <div class="form">
-            <div>
-                <label>Hey, want to know the impression your text creates? <b>Enter the text here.</b></label>
+            <div class="label">
+                <label>Hey, want to know the impression your text creates?
+                    <b>Enter the text here.</b>
+                </label>
             </div>
             <textarea placeholder="enter text here..." rows="10" cols="65"></textarea>
-            <div>
+            <div class="button">
                 <button onclick='process()'>analyse</button>
             </div>
         </div>
         <div class="response">
-    
+            <div>
+                <canvas id="myChart"></canvas>
+
+            </div>
         </div>
+
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script>
 
+
+    </script>
     <script src="/script/master.js"></script>
 </body>
 
