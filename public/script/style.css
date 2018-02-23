@@ -61,3 +61,10 @@ body {
       flex-direction: row;
       margin-top: 3em;
   }
+
+  .legend {
+    display: flex;
+    width: 200px;
+    height: 250px;
+    justify-content: center; 
+  }

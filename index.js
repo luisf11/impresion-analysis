@@ -17,7 +17,7 @@ app.get("/",(req, res)=>{
 
 app.post("/analyse",(req, res)=>{
     const text = req.body.phrase;
-    console.log(text)
+    // console.log(text)
     if(!text){
         res.statusCode = 422;
         res.json({

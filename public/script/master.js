@@ -36,22 +36,18 @@ function callApi(phrase) {
     });
 }
 function showScore(score) {
-  const response = document.querySelector(".response");
+  const response = document.querySelector(".legend");
 
   const span = `
   <span>
-      <p>Score: ${score.score}</p>
-      <p>Comparative: ${score.comparative}</p>
-      <p>Tokens: ${score.tokens.length}</p>
-      <p>Words: ${score.words.length}</p>
-      <p>Negative Words: ${score.negative.length}</p>
-      <p>Positive Words: ${score.positive.length}</p>
+      <p><b>Score:</b> ${score.score}</p>
+      <p><b>Tokens:</b> ${score.tokens.length}</p>
+      <p><b>Negative Words:</b> ${score.negative.length}</p>
+      <p><b>Positive Words:</b> ${score.positive.length}</p>
       </span>
         `;
-  let temp = document.createElement("div");
-  temp.innerHTML = span;
-  console.log(temp)
-  response.appendChild(temp);
+        
+  response.innerHTML = span;
   generateChart(score);
 }
 
